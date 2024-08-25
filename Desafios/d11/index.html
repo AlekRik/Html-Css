@@ -12,6 +12,9 @@
     
         * {
             margin: 0px;
+            padding: 0px;
+            font-size: 1em;
+            min-width: 100vh;
         }
         
         :root {
@@ -46,33 +49,44 @@
             text-decoration: underline;
         }
 
-        section > p {
+        section {
+           
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            padding-left: 30px;
+            line-height: 1em;
+            font-size: 3.5vw;
             font-family: var(--font-texto);
-            padding: 20px;
-            width: 500px;
-            height: 98vh;
-            
+        }
+        
+        section.imagem1 > p {
+            display: inline-block;
+            width: 330px;
+            height: 68vh; 
         }
 
         .imagem1 {
             background-image: url(imagens/background001.jpg);
-            background-position: center center;
+            background-position: right center;
             background-attachment: fixed;
             background-size: cover;
         }
 
-        p {
-            margin-left: 20px;
+        .imagem1 > p {
             color: white;
-            width: 200px;
-            background-color: rgba(0, 0, 0, 0.363);
+            background-color: rgba(0, 0, 0, 0.363);           
         }
 
         .imagem2 {
             background-image: url(imagens/background002.jpg);
-            background-position: center center;
+            background-position: right center;
             background-attachment: fixed;
             color: white;
+        }
+        
+        .imagem2 > p {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.363);
         }
 
         footer {
